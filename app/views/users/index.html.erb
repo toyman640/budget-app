@@ -1,0 +1,6 @@
+<h3>List of Users</h3><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } ,class: 'nav-link'%>
+<div>
+  <% @users.each do |user| %>
+    <p>My name is <%= user.name %></p>
+  <% end %>
+</div>
