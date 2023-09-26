@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
   def show
     @show_cat = Category.find(params[:id])
   end
+  
   def create
     @category = current_user.categories.build(category_params)
 

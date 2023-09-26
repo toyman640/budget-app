@@ -1,2 +1,8 @@
+<%= stylesheet_link_tag "category", "data-turbo-track": "reload"%>
 <h4>Shows Page</h4>
-<%= @show_cat.name %>
+<p>This is the <%= @show_cat.name %> Category</p>
+
+<%= render "dealings/index" %>
+<button class="button-container">
+  <%= link_to 'Create New Transaction', new_dealing_path(category_id: @show_cat.id), class: 'cat-link' %>
+</button>
