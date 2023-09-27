@@ -2,7 +2,7 @@
 <h4>Shows Page</h4>
 <p>This is the <%= @show_cat.name %> Category</p>
 
-<%= render "dealings/index" %>
+<%= render partial: "dealings/index", locals: { category_name: @category_name, dealings: @dealings_name } %>
 <button class="button-container">
   <%= link_to 'Create New Transaction', new_dealing_path(category_id: @show_cat.id), class: 'cat-link' %>
 </button>

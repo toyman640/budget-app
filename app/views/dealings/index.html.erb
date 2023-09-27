@@ -1,0 +1,13 @@
+<h2>This is/are dealings for <%= @category.name %> category</h2>
+
+<div>
+  <% @dealings.each do |dealing| %>
+    <p> <%= dealing.name %></p>
+  <% end %>
+
+  <p><%=  @total_amount %></p>
+
+  <button class="button-container">
+    <%= link_to 'Create New Transaction', new_dealing_path(category_id: @category.id), class: 'cat-link' %>
+  </button>
+</div>

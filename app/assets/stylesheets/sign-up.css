@@ -1,0 +1,50 @@
+body{
+  margin-top: -15px;
+  padding-top: 0;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3778c2;
+  margin-top: 0;
+  padding-top: 0;
+  color: #fff;
+}
+
+.input {
+  width: 90%;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  border-left: 0;
+  border-right: 0;
+  height: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.submit {
+  font-size: 1em;
+  color: #fff;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 3em;
+  border-radius: 10px;
+  border: 0;
+  background-color: #3778c2;
+}
+
+.label {
+  display: none;
+}
+
+.back-icon {
+  height: 30px;
+}

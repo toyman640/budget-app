@@ -2,12 +2,13 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!
   def index
     @categories = current_user.categories
+    @total_amounts = {}
+    @categories.each do |category|
+      @total_amounts[category.id] = category.dealings.sum(&:amount)
+    end
+   
   end
 
-  def show
-    @show_cat = Category.find(params[:id])
-  end
-  
   def create
     @category = current_user.categories.build(category_params)
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
   height: 100vh;
   padding: 0;
@@ -14,6 +16,7 @@ body {
 }
 
 .app-name {
+  font-family: 'Pacifico', cursive;
   font-size: 2em;
   color: #434b54;
 }

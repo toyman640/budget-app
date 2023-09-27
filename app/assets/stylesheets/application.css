@@ -15,7 +15,10 @@
  */
 
 body {
-  border: 1px solid #ff0000;
+  border: 2px solid rgb(67, 75, 84);
+  border-radius: 8px;
   width: 25%;
   margin-left: 37.5%;
+  margin-top: 0;
+  box-shadow: 5px 5px 5px rgba(67, 75, 84, 0.5);
 }

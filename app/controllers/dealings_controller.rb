@@ -1,7 +1,10 @@
 class DealingsController < ApplicationController
   def index
-    @dealings = current_user.dealings
     @category = Category.find(params[:category_id])
+    @dealings = @category.dealings
+    @categories = current_user.categories
+    @dealings_amount = Dealing.joins(:categories).where(categories: { id: @categories.pluck(:id) })
+    @total_amount = @dealings.sum(&:amount)
   end
 
   def create
@@ -12,7 +15,7 @@ class DealingsController < ApplicationController
     @dealing.categories = Category.where(id: category_ids)
 
     if @dealing.save
-      redirect_to category_path(@dealing.categories.first), notice: 'Transaction was successfully created.'
+      redirect_to :index, notice: 'Transaction was successfully created.'
     else
       flash.now[:alert] = 'Transaction was not created'
       render :new
