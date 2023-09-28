@@ -15,7 +15,7 @@ class DealingsController < ApplicationController
     @dealing.categories = Category.where(id: category_ids)
 
     if @dealing.save
-      redirect_to :index, notice: 'Transaction was successfully created.'
+      redirect_to categories_path, notice: 'Transaction was successfully created.'
     else
       flash.now[:alert] = 'Transaction was not created'
       render :new

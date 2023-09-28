@@ -1,8 +1,31 @@
-<h2>This is/are dealings for <%= @category.name %> category</h2>
+<%= stylesheet_link_tag "dealing", "data-turbo-track": "reload"%>
+<div class="deal-nav">
+  <a href="<%= categories_path %>">
+    <%= image_tag("arrow-back.png", class: "back-icon") %>
+  </a>
+  <h4>Details for <%= @category.name %> category</h4>
+  <p></p>
+</div>
 
+<div class="top-deal">
+  <div class="cat-desc">
+    <%= image_tag @category.icon,  class: "cat-icon" %> 
+    <p><%= @category.name %></p>
+    <p class="total">$<%=  @total_amount %></p>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ratione molestias laboriosam ullam consequatur quo totam. Fuga illo necessitatibus, vel ab quisquam voluptatem odio libero optio commodi enim officia atque.
+  </p>
+</div>
+<hr>
 <div>
   <% @dealings.each do |dealing| %>
-    <p> <%= dealing.name %></p>
+    <div class="deals">
+      <p > <%= dealing.name %></p>
+      <p> <%= dealing.created_at.strftime("%d %b %Y  at %I:%M%p") %></p>
+    </div>
+    <hr>
+    
   <% end %>
 
   <p><%=  @total_amount %></p>
