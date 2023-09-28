@@ -1,4 +1,4 @@
-body{
+body {
   margin-top: -15px;
   padding-top: 0;
 }
@@ -14,8 +14,8 @@ body{
 
 .input {
   width: 90%;
-  border-top: 1px solid #DDDDDD;
-  border-bottom: 1px solid #DDDDDD;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-left: 0;
   border-right: 0;
   height: 30px;

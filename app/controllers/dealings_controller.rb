@@ -25,6 +25,6 @@ class DealingsController < ApplicationController
   private
 
   def dealing_params
-    params.require(:dealing).permit(:name, :amount, category_ids: []) 
+    params.require(:dealing).permit(:name, :amount, category_ids: [])
   end
 end

@@ -6,7 +6,6 @@ class CategoriesController < ApplicationController
     @categories.each do |category|
       @total_amounts[category.id] = category.dealings.sum(&:amount)
     end
-   
   end
 
   def create
@@ -25,6 +24,6 @@ class CategoriesController < ApplicationController
   private
 
   def category_params
-    params.require(:category).permit(:name, :icon) 
+    params.require(:category).permit(:name, :icon)
   end
 end

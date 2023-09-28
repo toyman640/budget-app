@@ -11,9 +11,10 @@
 
 .button-container {
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
+
   /* right: 20px;  */
- border: 0;
+  border: 0;
   width: 20%;
   margin-left: 2.5%;
   background-color: #5fb523;
@@ -40,7 +41,6 @@ a {
   align-items: center;
   margin-bottom: 10px;
   justify-content: space-between;
-  
 }
 
 .cover {
