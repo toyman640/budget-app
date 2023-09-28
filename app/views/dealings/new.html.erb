@@ -1,0 +1,20 @@
+<%= form_with model: @dealing, url: dealings_path, method: :post do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name,  name: 'dealing[name]' %>
+  </div>
+  <div>
+    <%= form.label :amount %><br>
+    <%= form.text_field :amount,  name: 'dealing[amount]' %>
+  </div>
+  <div>
+    <%= form.label :categories %><br>
+    <% Category.all.each do |category| %>
+      <%= check_box_tag 'dealing[category_ids][]', category.id %>
+      <%= category.name %><br>
+    <% end %>
+  </div>
+  <%= form.submit %>
+<% end %>
+
+

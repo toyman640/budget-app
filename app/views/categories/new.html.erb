@@ -1,0 +1,12 @@
+<h2>New Category</h2>
+<%= form_with model: @category, url: categories_path, method: :post  do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name, name: 'category[name]' %>
+  </div>
+  <div>
+    <%= form.label :icon %><br>
+    <%= form.text_field :icon, name: 'category[icon]' %>
+  </div>
+  <%= form.submit %>
+<% end %>

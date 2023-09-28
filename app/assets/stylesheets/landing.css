@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+.splash-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80%;
+  height: 50%;
+  text-align: center;
+}
+
+.app-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #434b54;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: start; */
+}
+
+.log-button {
+  height: 4em;
+  border: none;
+  background-color: transparent;
+}
+
+.log-button:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #3778c2;
+  transition: color 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+}

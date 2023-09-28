@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_25_125019) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_26_180040) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,10 +26,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_25_125019) do
   create_table "categories_dealings", id: false, force: :cascade do |t|
     t.bigint "category_id", null: false
     t.bigint "dealing_id", null: false
-    t.bigint "categories_id", null: false
-    t.bigint "dealings_id", null: false
-    t.index ["categories_id"], name: "index_categories_dealings_on_categories_id"
-    t.index ["dealings_id"], name: "index_categories_dealings_on_dealings_id"
+    t.index ["category_id"], name: "index_categories_dealings_on_category_id"
+    t.index ["dealing_id"], name: "index_categories_dealings_on_dealing_id"
   end
 
   create_table "dealings", force: :cascade do |t|
@@ -55,7 +53,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_25_125019) do
   end
 
   add_foreign_key "categories", "users"
-  add_foreign_key "categories_dealings", "categories", column: "categories_id"
-  add_foreign_key "categories_dealings", "dealings", column: "dealings_id"
   add_foreign_key "dealings", "users", column: "author_id"
 end
