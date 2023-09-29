@@ -7,7 +7,7 @@ RSpec.describe 'Dealing Index Page', type: :system do
 
     # category
     @cat1 = Category.create(name: 'Stationay',
-                            icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcoca-cola-logo%2F&psig=AOvVaw2J0sE1dk1k_UIVR4_pVNKL&ust=1695999317947000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD9p_jHzYEDFQAAAAAdAAAAABAI', user_id: @user1.id)
+                            icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net', user_id: @user1.id)
     @cat2 = Category.create(name: 'Fast Food', icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.ne',
                             user_id: @user2.id)
 
