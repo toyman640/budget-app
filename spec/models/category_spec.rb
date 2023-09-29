@@ -13,7 +13,6 @@ RSpec.describe Category, type: :model do
     expect(cat).to_not be_valid
   end
 
-
   it 'is not valid without an icon' do
     cat = Category.new(
       name: 'Stationary',
