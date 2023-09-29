@@ -7,7 +7,7 @@ RSpec.describe Dealing, type: :model do
   end
 
   it 'name should be present' do
-    deal = Dealing.create(name: 'Stationay', amount: 2.99,  author: @user1)
+    deal = Dealing.create(name: 'Stationay', amount: 2.99, author: @user1)
     deal.name = nil
     expect(deal).to_not be_valid
   end

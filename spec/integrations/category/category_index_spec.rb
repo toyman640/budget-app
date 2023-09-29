@@ -6,8 +6,10 @@ RSpec.describe 'Category Index Page', type: :system do
     @user2 = User.create(name: 'ade', email: 'toyo@gail.com', password: 'toyman1', password_confirmation: 'toyman1')
 
     # post
-    @cat1 = Category.create(name: 'Stationay', icon: "https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcoca-cola-logo%2F&psig=AOvVaw2J0sE1dk1k_UIVR4_pVNKL&ust=1695999317947000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD9p_jHzYEDFQAAAAAdAAAAABAI",  user_id: @user1.id)
-    @cat2 = Category.create(name: 'Fast Food', icon: "https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.ne",  user_id: @user2.id)
+    @cat1 = Category.create(name: 'Stationay',
+                            icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcoca-cola-logo%2F&psig=AOvVaw2J0sE1dk1k_UIVR4_pVNKL&ust=1695999317947000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD9p_jHzYEDFQAAAAAdAAAAABAI', user_id: @user1.id)
+    @cat2 = Category.create(name: 'Fast Food', icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.ne',
+                            user_id: @user2.id)
   end
 
   it 'User can see the foods page' do
@@ -33,5 +35,4 @@ RSpec.describe 'Category Index Page', type: :system do
     visit categories_path
     expect(page).to have_link('Create New Category', href: new_category_path)
   end
-
 end

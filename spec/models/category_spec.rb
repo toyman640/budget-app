@@ -7,12 +7,13 @@ RSpec.describe Category, type: :model do
   end
 
   it 'name should be present' do
-    cat = Category.create(name: 'Stationay', icon: "https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcoca-cola-logo%2F&psig=AOvVaw2J0sE1dk1k_UIVR4_pVNKL&ust=1695999317947000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD9p_jHzYEDFQAAAAAdAAAAABAI",  user_id: @user1.id)
+    cat = Category.create(name: 'Stationay',
+                          icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcoca-cola-logo%2F&psig=AOvVaw2J0sE1dk1k_UIVR4_pVNKL&ust=1695999317947000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD9p_jHzYEDFQAAAAAdAAAAABAI', user_id: @user1.id)
     cat.name = nil
     expect(cat).to_not be_valid
   end
 
-  
+
   it 'is not valid without an icon' do
     cat = Category.new(
       name: 'Stationary',
@@ -33,5 +34,4 @@ RSpec.describe Category, type: :model do
 
     expect(cat.dealings).to include(dealing1, dealing2)
   end
-
 end
