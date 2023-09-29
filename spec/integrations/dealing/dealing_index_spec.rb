@@ -27,12 +27,9 @@ RSpec.describe 'Dealing Index Page', type: :system do
     sign_in @user1
     visit dealings_path(category_id: @cat1.id)
 
-
     expect(page).to have_content('Deal 1')
 
     expect(page).to have_content('Deal 2')
-
-
 
     expect(page).not_to have_content('Deal 3')
   end
@@ -40,7 +37,6 @@ RSpec.describe 'Dealing Index Page', type: :system do
   it 'User can see new dealing link' do
     sign_in @user1
     visit dealings_path(category_id: @cat1.id)
-
     expect(page).to have_link('Create New Transaction', href: new_dealing_path(category_id: @cat1.id))
   end
 end
