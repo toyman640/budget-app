@@ -29,9 +29,9 @@
   <% end %>
 
   <p><%=  @total_amount %></p>
+  <button class="button-container">
+  <%= link_to 'Create New Category', new_category_path, class: 'cat-link' %>
+</button>
   
 </div>
 
-<button class="button-container">
-  <%= link_to 'Create New Category', new_category_path, class: 'cat-link' %>
-</button>

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .splash-page {
@@ -24,31 +24,7 @@ body {
 .links {
   display: flex;
   flex-direction: column;
-
-  /* justify-content: start; */
 }
-
-/* .btn{
-  height: 4em;
-  border: none;
-  background-color: transparent;
-}
-
-.btn:hover {
-  background-color: #3778c2;
-  color: #fff;
-}
-
-.log-button {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #3778c2;
-  transition: color 0.3s;
-}
-
-.log-button:hover {
-  color: #fff;
-} */
 
 .btn {
   width: 80%;

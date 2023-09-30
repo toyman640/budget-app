@@ -1,3 +1,7 @@
+body {
+  height: 100%;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -12,8 +16,6 @@
 .button-container {
   position: fixed;
   bottom: 20px;
-
-  /* right: 20px;  */
   border: 0;
   width: 20%;
   margin-left: 2.5%;
