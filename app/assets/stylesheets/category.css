@@ -65,3 +65,9 @@ a {
 .cat-head {
   color: #fff;
 }
+
+.cat-icon {
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
