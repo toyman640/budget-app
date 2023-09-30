@@ -99,7 +99,7 @@ Deployment: [Kowope](https://kowope.onrender.com/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎞️ Presentation Video <a name="video"></a>
-Video: [Presentation](https://www.loom.com/share/36ae6cb1537b428596be98fbb1ab9c7b)
+Video: [Presentation](https://www.loom.com/share/9dff0d28807d4e9992e3c0b3fc4af943?sid=125d7f24-dff8-4f3d-b491-9e5643e06fd3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
