@@ -1,15 +1,18 @@
 <div class="splash-page">
   <h2 class="app-name">KOWOPE</h2>
   <div class="links">
-    <button class="log-button">
-      <%= link_to 'Log In', new_user_session_path, class: 'btn' %>
-    </button>
+    <%= link_to new_user_session_path, class: 'btn' do %>
+      <button class="log-button">
+        Log in
+      </button>
+    <% end %>
    
     
     <!-- Signup Link -->
-    <button class="log-button">
-      <%= link_to 'Sign Up', new_user_registration_path, class: 'btn' %>
-    </button>
-    
+    <%= link_to new_user_registration_path, class: 'btn' do %>
+      <button class="log-button">
+        Sign Up
+      </button>
+    <% end %>
   </div>
 </div>

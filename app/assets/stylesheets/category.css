@@ -66,3 +66,28 @@ a {
 .cat-head {
   color: #fff;
 }
+
+.input-cat {
+  width: 90%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  height: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.category-image {
+  height: 20px;
+}
+
+.back-icon {
+  height: 30px;
+}

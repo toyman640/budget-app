@@ -28,24 +28,53 @@ body {
   /* justify-content: start; */
 }
 
-.log-button {
+/* .btn{
   height: 4em;
   border: none;
   background-color: transparent;
 }
 
-.log-button:hover {
+.btn:hover {
   background-color: #3778c2;
   color: #fff;
 }
 
-.btn {
+.log-button {
   text-decoration: none;
   font-size: 1.2em;
   color: #3778c2;
   transition: color 0.3s;
 }
 
-.btn:hover {
+.log-button:hover {
   color: #fff;
+} */
+
+
+.btn {
+  width: 80%;
+  margin-left: 10%;
+  height: 2em;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+.btn:hover {
+  background-color: #3778c2;
+}
+
+.log-button {
+  border: 0;
+  background: inherit;
+  line-height: 30px;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  color: #3778c2;
+  cursor: pointer;
+}
+
+.log-button:hover {
+  color: #fff;
+  cursor: pointer;
 }
