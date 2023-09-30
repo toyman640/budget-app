@@ -11,20 +11,20 @@
 
 .button-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 1px;
 
-  /* right: 20px;  */
   border: 0;
-  width: 20%;
-  margin-left: 2.5%;
+  width: 25%;
   background-color: #5fb523;
-  height: 5%;
+  height: 9%;
 }
 
 .cat-link {
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
+  border: 1px solid #fff;
+  padding: 3%;
 }
 
 .main-part {
