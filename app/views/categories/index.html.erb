@@ -17,7 +17,7 @@
           </div>
           <div class="category-info">
             <p><%= category.name %></p>
-            <p>$<%= @total_amounts[category.id] || 0 %></p>
+            <p class="cat-amount">$<%= @total_amounts[category.id] || 0 %></p>
           </div>
           
         </div> 
@@ -31,7 +31,7 @@
   <p><%=  @total_amount %></p>
   <button class="button-container">
   <%= link_to 'Create New Category', new_category_path, class: 'cat-link' %>
-</button>
+  </button>
   
 </div>
 

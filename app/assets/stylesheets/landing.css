@@ -5,36 +5,10 @@ body {
   padding: 0;
 }
 
-.splash-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 80%;
-  height: 50%;
-  text-align: center;
-}
-
-.app-name {
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
-  color: #434b54;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-}
-
-.btn {
-  width: 80%;
-  margin-left: 10%;
-  height: 2em;
-  border-radius: 5px;
-  margin-top: 1%;
-}
-
 .btn:hover {
   background-color: #3778c2;
+  border-radius: 5px;
+  margin-left: 2.5%;
 }
 
 .log-button {
@@ -51,4 +25,52 @@ body {
 .log-button:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.splash-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-name {
+  font-family: 'Pacifico', cursive;
+  margin-top: 80%;
+  font-size: 2em;
+  color: #434b54;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+  width: 90%;
+}
+
+.desktop-see {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    border: none;
+    background-color: #faf9f6;
+    min-height: auto;
+    box-shadow: 0 0 0;
+  }
+
+  .splash-page {
+    display: none;
+  }
+
+  .desktop-see {
+    display: block;
+    border: none;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .notification-message {
+    display: none;
+  }
 }

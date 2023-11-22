@@ -14,23 +14,26 @@ body {
 }
 
 .button-container {
-  position: fixed;
-  bottom: 20px;
+  position: absolute;
+  bottom: 0;
   border: 0;
-  width: 20%;
-  margin-left: 2.5%;
+  width: 100%;
   background-color: #5fb523;
-  height: 5%;
+  height: 10%;
 }
 
 .cat-link {
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
+  border: 1px solid #fff;
+  padding: 10px 40px;
 }
 
 .main-part {
   margin-top: 10%;
+
+  /* background-color: #faf9f6; */
 }
 
 a {
@@ -46,7 +49,12 @@ a {
 }
 
 .cover {
-  background-color: #d0d6dd;
+  background-color: #fff;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
 }
 
 .category-info {
@@ -88,8 +96,16 @@ a {
 
 .category-image {
   height: 30px;
+  margin-top: 5%;
+  padding-left: 5%;
 }
 
 .back-icon {
   height: 30px;
+  margin-top: 70%;
+}
+
+.cat-amount {
+  margin-top: 10%;
+  padding-right: 5%;
 }
