@@ -1,0 +1,18 @@
+databases:
+  - name: kowope
+    databaseName: Kowope-app
+    user: kowope_app_user
+
+services:
+  - type: web
+    name: rails
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Kowope-app
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false

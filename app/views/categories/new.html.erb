@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "category", "data-turbo-track": "reload"%>
+
+<div class="top-bar">
+  <a href="<%= categories_path %>">
+    <%= image_tag("arrow-back.png", class: "back-icon") %>
+  </a>
+  <h2>New Category</h2>
+  <p></p>
+</div>
+<%= form_with model: @category, url: categories_path, method: :post  do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name, name: 'category[name]', class: "input-cat" %>
+  </div>
+  <div>
+    <%= form.label :icon %><br>
+    <%= form.text_field :icon, name: 'category[icon]', class: "input-cat"  %>
+  </div>
+  <%= form.submit%>
+<% end %>

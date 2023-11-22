@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  border: 1px solid rgb(67, 75, 84);
+  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  box-shadow: 5px 5px 5px rgba(67, 75, 84, 0.5);
+  background-color: #faf9f6;
+}
+
+.keep-note {
+  display: none;
+}
+
+.notice {
+  position: absolute;
+  background-color: #28a745;
+  color: #fff;
+  margin-top: 1%;
+  padding: 10px;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.notification-message {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.fade-out {
+  opacity: 0;
+}
