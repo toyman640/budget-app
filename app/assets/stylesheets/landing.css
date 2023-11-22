@@ -46,3 +46,29 @@ body {
   margin-top: 30%;
   width: 90%;
 }
+
+.desktop-see {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    border: none;
+    background-color: #faf9f6;
+    min-height: auto;
+    box-shadow: 0 0 0;
+  }
+  .splash-page {
+    display: none;
+  }
+  .desktop-see {
+    display:block;
+    border: none;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .notification-message {
+    display: none;
+  }
+}
