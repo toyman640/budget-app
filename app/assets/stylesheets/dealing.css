@@ -9,7 +9,7 @@
 
 .back-icon {
   height: 30px;
-  margin-top: 5%;
+  margin-top: 55%;
 }
 
 .cat-desc {
@@ -35,4 +35,11 @@
 .total {
   margin-left: 8%;
   font-weight: 900;
+}
+
+.form-btn {
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 4px 12px;
 }
